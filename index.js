@@ -32,16 +32,25 @@ inquirer
         circle.setColor(response.textColor)
         circle.setText(response.text)
         circle.setShapeColor(response.shapeColor)
+        fs.writeFile("./examples/logo.svg", circle.render(), (err) => {
+            console.log("Generated logo.svg")
+        })
     } else if(response.shape === "triangle") {
         const triangle = new Triangle()
         triangle.setColor(response.textColor)
         triangle.setText(response.text)
         triangle.setShapeColor(response.shapeColor)
+        fs.writeFile("./examples/logo.svg", triangle.render(), (err) => {
+            console.log("Generated logo.svg")
+        })
     } else if(response.shape === "square") {
         const square = new Square()
         square.setColor(response.textColor)
         square.setText(response.text)
         square.setShapeColor(response.shapeColor)
+        fs.writeFile("./examples/logo.svg", square.render(), (err) => {
+            console.log("Generated logo.svg")
+        })
     }
 })
 
