@@ -38,7 +38,7 @@ Here is a walkthrough video link: https://drive.google.com/file/d/1jgaFOeGn8Z5zC
 
 ## Credits
 
-Giselle Reyes
+Giselle Reyes, Professor Phil Lloyd, and Tutor Juan Delgado
 
 ## License
 
