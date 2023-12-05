@@ -36,7 +36,7 @@ inquirer
 
     if(response.shape === "circle") {
         const circle = new Circle()
-        circle.setColor(response.textColor)
+        circle.setTextColor(response.textColor)
         circle.setText(response.text)
         circle.setShapeColor(response.shapeColor)
         fs.writeFile("./generated/logo.svg", circle.render(), (err) => {
@@ -44,7 +44,7 @@ inquirer
         })
     } else if(response.shape === "triangle") {
         const triangle = new Triangle()
-        triangle.setColor(response.textColor)
+        triangle.setTextColor(response.textColor)
         triangle.setText(response.text)
         triangle.setShapeColor(response.shapeColor)
         fs.writeFile("./generated/logo.svg", triangle.render(), (err) => {
@@ -52,7 +52,7 @@ inquirer
         })
     } else if(response.shape === "square") {
         const square = new Square()
-        square.setColor(response.textColor)
+        square.setTextColor(response.textColor)
         square.setText(response.text)
         square.setShapeColor(response.shapeColor)
         fs.writeFile("./generated/logo.svg", square.render(), (err) => {
