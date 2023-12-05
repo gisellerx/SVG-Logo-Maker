@@ -8,7 +8,15 @@ inquirer
 .prompt([{
     type: "input",
     message: "Enter SVG text:",
-    name: "text"
+    name: "text",
+    // validate will help test length to see if more than 3 characters
+    validate: (input) => {
+        if (input.length > 3) {
+            return "Text must be no more than 3 characters"
+        } else {
+            return true
+        }
+    }
 }, {
     type: "list",
     message: "Enter text color:",
