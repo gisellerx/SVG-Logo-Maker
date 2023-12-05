@@ -14,11 +14,13 @@ inquirer
     validate: (input) => {
         if (input.length > 3) {
             return "Text must be no more than 3 characters"
+        // else portion allows me to resubmit desired text, otherwise it will be stuck when more than 3 characters 
         } else {
             return true
         }
     }
 }, {
+    // originally had a list of options, not unlimited choices for textColor, tutor assisted with modification
     type: "input",
     message: "Enter text color:",
     name: "textColor",
@@ -28,6 +30,7 @@ inquirer
     name: "shape",
     choices: ["circle", "triangle", "square"]
 }, {
+    // had only a set list of options for shapeColor originally, now unlimited choices by changing list to input
     type: "input",
     message: "Enter shape color:",
     name: "shapeColor"
