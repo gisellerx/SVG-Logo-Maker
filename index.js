@@ -7,8 +7,9 @@ const fs = require("fs")
 inquirer
 .prompt([{
     type: "input",
-    message: "Enter SVG text:",
+    message: "Enter desired SVG text:",
     name: "text",
+    // Tutor helped with setting up the validation function
     // validate will help test length to see if more than 3 characters
     validate: (input) => {
         if (input.length > 3) {
@@ -18,20 +19,18 @@ inquirer
         }
     }
 }, {
-    type: "list",
+    type: "input",
     message: "Enter text color:",
     name: "textColor",
-    choices: ["red", "green", "blue"]
 }, {
     type: "list",
     message: "Enter shape:",
     name: "shape",
     choices: ["circle", "triangle", "square"]
 }, {
-    type: "list",
+    type: "input",
     message: "Enter shape color:",
-    name: "shapeColor",
-    choices: ["red", "green", "blue"]
+    name: "shapeColor"
 }])
 .then(response =>{
 
@@ -40,7 +39,7 @@ inquirer
         circle.setColor(response.textColor)
         circle.setText(response.text)
         circle.setShapeColor(response.shapeColor)
-        fs.writeFile("./examples/logo.svg", circle.render(), (err) => {
+        fs.writeFile("./generated/logo.svg", circle.render(), (err) => {
             console.log("Generated logo.svg")
         })
     } else if(response.shape === "triangle") {
@@ -48,7 +47,7 @@ inquirer
         triangle.setColor(response.textColor)
         triangle.setText(response.text)
         triangle.setShapeColor(response.shapeColor)
-        fs.writeFile("./examples/logo.svg", triangle.render(), (err) => {
+        fs.writeFile("./generated/logo.svg", triangle.render(), (err) => {
             console.log("Generated logo.svg")
         })
     } else if(response.shape === "square") {
@@ -56,7 +55,7 @@ inquirer
         square.setColor(response.textColor)
         square.setText(response.text)
         square.setShapeColor(response.shapeColor)
-        fs.writeFile("./examples/logo.svg", square.render(), (err) => {
+        fs.writeFile("./generated/logo.svg", square.render(), (err) => {
             console.log("Generated logo.svg")
         })
     }
