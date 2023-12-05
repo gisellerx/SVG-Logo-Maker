@@ -35,6 +35,8 @@ inquirer
     message: "Enter shape color:",
     name: "shapeColor"
 }])
+
+// prompts for user input of text, color of text, shape of design, and shape color, then renders a shape within the generated folder 
 .then(response =>{
 
     if(response.shape === "circle") {
