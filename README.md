@@ -38,7 +38,7 @@ Here is a walkthrough video link: https://drive.google.com/file/d/1jgaFOeGn8Z5zC
 
 ## Credits
 
-Giselle Reyes, Professor Phil Lloyd, and Tutor Juan Delgado
+Giselle Reyes, Professor Phil Lloyd, Tutor Juan Delgado, and TA Quentin Jones
 
 ## License
 
@@ -54,4 +54,4 @@ Personal challenge
 
 ## Tests
 
-Used VS Code
+Used VS Code, Jest
