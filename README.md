@@ -32,9 +32,9 @@ N/A
 
 ## Usage
 
-Here is a walkthrough video link: https://drive.google.com/file/d/1jgaFOeGn8Z5zCvMzM7q5Xw_HAvrbXDqQ/view 
+Here is a walkthrough video link: https://drive.google.com/file/d/12CzA0QxlrTfpjbZa1KHKc2jJq7Q1IEgY/view  
 
-![](https://github.com/gisellerx/gifhub/blob/main/SVG%20LOGO%20MAKER%20GIF.gif?raw=true)
+<img src="./Assets/img/screenshot.png">
 
 ## Credits
 
