@@ -1,7 +1,7 @@
 // Professor Phil can largely be credited for this part of the project given that he gave us a video guide that covered this portion 
 const Circle = require("./lib/Circle")
-const Triangle = require("./lib/Triangle")
 const Square = require("./lib/Square")
+const Triangle = require("./lib/Triangle")
 const inquirer = require("inquirer")
 const fs = require("fs")
 
@@ -10,7 +10,7 @@ inquirer
 
     type: "input",
 
-    message: "Enter desired SVG text:",
+    message: "Enter a max of three characters:",
 
     name: "text",
 
@@ -32,7 +32,7 @@ inquirer
     // originally had a list of options, not unlimited choices for textColor, tutor assisted with modification
     type: "input",
 
-    message: "Enter text color:",
+    message: "Enter any text color:",
 
     name: "textColor",
 
@@ -40,7 +40,7 @@ inquirer
 
     type: "list",
 
-    message: "Enter shape:",
+    message: "Enter 1 of three shapes:",
 
     name: "shape",
 
@@ -50,7 +50,7 @@ inquirer
     // had only a set list of options for shapeColor originally, now unlimited choices by changing list to input
     type: "input",
 
-    message: "Enter shape color:",
+    message: "Enter any shape color:",
 
     name: "shapeColor"
 
@@ -63,7 +63,7 @@ inquirer
 
         const circle = new Circle()
 
-        circle.setTextColor(response.textColor)
+        circle.setWordColor(response.textColor)
 
         circle.setText(response.text)
 
@@ -79,7 +79,7 @@ inquirer
 
         const triangle = new Triangle()
 
-        triangle.setTextColor(response.textColor)
+        triangle.setWordColor(response.textColor)
 
         triangle.setText(response.text)
 
@@ -95,7 +95,7 @@ inquirer
 
         const square = new Square()
 
-        square.setTextColor(response.textColor)
+        square.setWordColor(response.textColor)
 
         square.setText(response.text)
 
