@@ -10,7 +10,7 @@ inquirer
 
     type: "input",
 
-    message: "Enter a max of three characters:",
+    message: "Enter text with a max of three characters:",
 
     name: "text",
 
